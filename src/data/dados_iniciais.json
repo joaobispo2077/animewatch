@@ -1,0 +1,257 @@
+{
+  "categorias": [
+    {
+      "titulo": "Edits",
+      "link": "https://www.alura.com.br/formacao-front-end",
+      "cor": "#f26724",
+      "link_extra": {
+        "text": "Edições feitas pela comunidade para a comunidade",
+        "url": ""
+      },
+      "videos": [
+        {
+          "titulo": "Mais que um espaço feito para otakus e otomes, mas, feito por eles.",
+          "url": "https://www.youtube.com/watch?v=u36kHyrvwL8&list=PLuH-jjpg-UUvinNzA9WugiuP7kVpD3rFW&index=7"
+        },
+        {
+          "titulo": "Naruto",
+          "url": "https://www.youtube.com/watch?v=x1zFSLZlSxc"
+        },
+        {
+          "titulo": "Boku no Hero - Todoroki Vs Deku",
+          "url": "https://www.youtube.com/watch?v=K9Eakcufh_0"
+        },
+        {
+          "titulo": "Bleach",
+          "url": "https://www.youtube.com/watch?v=_Tirh_Ujcg8"
+        },
+        {
+          "titulo": "Toph",
+          "url": "https://youtu.be/LJ3CRpq6Q9g?list=PLuH-jjpg-UUu_o7FFIA_edLWtt8IapRpq"
+        },
+        {
+          "titulo": "Bleach | Aizen",
+          "url": "https://youtu.be/n7ZG8e8MxTk?list=PLuH-jjpg-UUu_o7FFIA_edLWtt8IapRpq"
+        },
+        {
+          "titulo": "Avatar - Zukoh vs Azula",
+          "url": "https://www.youtube.com/watch?v=AZ2MmP13RTA"
+        },
+        {
+          "titulo": "Naruto",
+          "url": "https://www.youtube.com/watch?v=tiZsP36QeoU"
+        },
+        {
+          "titulo": "Demon Slayer: Kimetsu No Yaiba",
+          "url": "https://www.youtube.com/watch?v=vdvGLeZ9Q7w"
+        },
+        {
+          "titulo": "Beyond The Boundary",
+          "url": "https://www.youtube.com/watch?v=bk-tgPyrxis"
+        },
+        {
+          "titulo": "Your Name - By Your Side",
+          "url": "https://www.youtube.com/watch?v=jqH3yvRppcM"
+        },
+        {
+          "titulo": "Hyouka",
+          "url": "https://youtu.be/UQ_voZ0l9v0?list=PLuH-jjpg-UUts6vP2q6moOl4iSByZ01V4"
+        },
+        {
+          "titulo": "Naruto - Sasuke Vs Danzou",
+          "url": "https://www.youtube.com/watch?v=zJKLsUUQ_c4"
+        }           
+      ]
+    },
+    {
+      "titulo": "Memes",
+      "link": "",
+      "cor": "#6BD1FF",
+      "link_extra": {
+        "text": "Melhores memes da comunidade",
+        "url": ""
+      },
+      "videos": [
+
+        {
+          "titulo": "BEST ANIME MEMES COMPILATION V1",
+          "url": "https://www.youtube.com/watch?v=lwwYO4KkT8Q"
+        },
+        {
+          "titulo": "Never Pause Naruto",
+          "url": "https://www.youtube.com/watch?v=0EF8Fbzagcw"
+        },
+        {
+          "titulo": "BEST ANIME MEMES COMPILATION V3",
+          "url": "https://www.youtube.com/watch?v=nM6uPCleHqc"
+        },
+        {
+          "titulo": "Never Pause Anime",
+          "url": "https://www.youtube.com/watch?v=jUSOxIBXXEc"
+        },
+        {
+          "titulo": "Zueira Animes",
+          "url": "https://www.youtube.com/watch?v=KJ3AFtCns6g"
+        },
+
+        {
+          "titulo": "Chika Dancing",
+          "url": "https://www.youtube.com/watch?v=ffwCD6uVXus"
+        }     
+      ]
+    },
+    {
+      "titulo": "ASMV",
+      "cor": "#00C86F",
+      "link_extra": {
+        "text": "Anime Story Music Video",
+        "url": ""
+      },
+      "videos": [
+        {
+          "titulo": "Demon Slayer | Criaturas trágicas",
+          "url": "https://www.youtube.com/watch?v=IyXxMpP7z5U"
+        },
+        {
+          "titulo": "",
+          "url": "https://youtu.be/isiye0uNly8?list=PLuH-jjpg-UUts6vP2q6moOl4iSByZ01V4"
+        },
+        {
+          "titulo": "My Hero Academia - Reasons to Become a Hero",
+          "url": "https://www.youtube.com/watch?v=8soRsAb6lOk"
+        },
+        {
+          "titulo": "Word Of Concflicts 1 - Rightous Justice",
+          "url": "https://www.youtube.com/watch?v=Pgp5V9Qoj98"
+        },
+        {
+          "titulo": "Word Of Concflicts 2 - Love",
+          "url": "https://www.youtube.com/watch?v=fgX8Y5i5ai4"
+        },
+        {
+          "titulo": "Word Of Concflicts 3 - Truths and Facts",
+          "url": "https://www.youtube.com/watch?v=YtNoH2rm4gY"
+        },
+        {
+          "titulo": "Word Of Concflicts 4 - Kings",
+          "url": "https://www.youtube.com/watch?v=zJZbrN3Q7rA"
+        }
+      ]
+    },
+    {
+      "titulo": "AMV",
+      "cor": "violet",
+      "link_extra": {
+        "text": "Anime Music Video",
+        "url": ""
+      },
+      "videos": [
+        {
+          "titulo": "One Piece | Natural",
+          "url": "https://www.youtube.com/watch?v=2zEc9vjpfRY"
+        },
+        {
+          "titulo": "My Hero Academia | Mr Sandman",
+          "url": "https://youtu.be/svGnb9Gcza0?list=PLuH-jjpg-UUvinNzA9WugiuP7kVpD3rFW"
+        },
+        {
+          "titulo": "Sparkle | Your Name AMV",
+          "url": "https://www.youtube.com/watch?v=K_7To_y9IAM"
+        },
+        {
+          "titulo": "Thousand Foot Krutch | Courtesy Call",
+          "url": "https://www.youtube.com/watch?v=QQdsAzMQZf8"
+        }
+      ]
+    },
+    {
+      "titulo": "Lofi Version",
+      "cor": "orange",
+      "videos": [
+        {
+          "titulo": "𝕋𝕙𝕖 𝕃𝕒𝕤𝕥 𝔸𝕚𝕣𝕓𝕖𝕟𝕕𝕖𝕣 [ 𝔸𝕧𝕒𝕥𝕒𝕣 𝕝𝕠𝕗𝕚 / 𝕝𝕠𝕗𝕚 𝕙𝕚𝕡 𝕙𝕠𝕡 / 𝕔𝕙𝕚𝕝𝕝 𝕞𝕚𝕩]",
+          "url": "https://www.youtube.com/watch?v=XrT6unHjqr4"
+        },
+        {
+          "titulo": "",
+          "url": "https://www.youtube.com/watch?v=VQJJpbvMOec"
+        },
+        {
+          "titulo": "Anime Lo-Fi",
+          "url": "https://www.youtube.com/watch?v=aJjqZX44zzE"
+        }
+      ]
+    },
+    {
+      "titulo": "OST",
+      "cor": "red",
+      "link_extra": {
+        "text": "Original SoundTrack",
+        "url": ""
+      },
+      "videos": [
+        {
+          "titulo": "Attack on Titan Season 2 OST - Call of Silence「Extended」",
+          "url": "https://www.youtube.com/watch?v=_GodPP6LimY"
+        },
+        {
+          "titulo": "Sword Art Online 1 hour songs",
+          "url": "https://www.youtube.com/watch?v=z5jf1jornm8"
+        },
+        {
+          "titulo": "Re:zero 1 hour song",
+          "url": "https://www.youtube.com/watch?v=vhQzlRI5Tig"
+        }
+      ]
+    },
+    {
+      "titulo": "Cenas de Luta",
+      "cor": "#6b5be2",
+      "link_extra": {
+        "text": "Cenas marcantes",
+        "url": ""
+      },
+      "videos": [
+        {
+          "titulo": "Madara",
+          "url": "https://www.youtube.com/watch?v=zp6xM6Aezmg"
+        },
+        {
+          "titulo": "Hollow Berserk",
+          "url": "https://www.youtube.com/watch?v=QRXiBE3Xy0c"
+        },
+        {
+          "titulo": "Deku Vs Muscular",
+          "url": "https://youtu.be/ct8In_FAvZE?list=PLRe9ARNnYSY7Yy7Ge9HIX6E4WsYZHd9LD"
+        }
+      ]
+    },
+    {
+      "titulo": "Trailers",
+      "cor": "#9cd33b",
+      "link_extra": {
+        "text": "",
+        "url": ""
+      },
+      "videos": [
+
+        {
+          "titulo": "Naruto - (Série animada)",
+          "url": "https://www.youtube.com/watch?v=-G9BqkgZXRA"
+        },
+        {
+          "titulo": "Dragon Ball Z - (Filme)",
+          "url": "https://www.youtube.com/watch?v=aOPJ6y3HWII"
+        },
+        {
+          "titulo": "Hunter X Hunter - (Série animada)",
+          "url": "https://www.youtube.com/watch?v=d6kBeJjTGnY"
+        },
+        {
+          "titulo": "Tokyo Ghoul",
+          "url": "https://www.youtube.com/watch?v=ETHpMMV8rJU"
+        }
+      ]
+    }
+  ]
+}
