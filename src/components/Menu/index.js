@@ -1,18 +1,18 @@
 import React from 'react';
-import Logo from '../../assets/img/logo_animewatch.png'
-import ButtonLink from '../Menu/components/ButtonLink'
-import Button from '../Button'
+import Logo from '../../assets/img/logo_animewatch.png';
+import Button from '../Button';
+import { Link } from 'react-router-dom';
 
-import './Menu.css'
+import './Menu.css';
 
 
 const Menu = () => {
 return(
     <nav className="Menu">
-        <a href="/">
+        <Link to="/">
          <img className="Logo" src={Logo} alt="AnimeWatch Logomarca"/>
-        </a>
-        <Button as="a" className="ButtonLink" href="">
+        </Link>
+        <Button as={Link} className="ButtonLink" to="/cadastro/video">
             Novo vídeo
         </Button>
     </nav>
