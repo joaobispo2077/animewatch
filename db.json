@@ -1,0 +1,16 @@
+{
+    "categorias": [
+        {
+            "id": 1,
+            "nome": "Edits",
+            "descricao": "Edits feitos pela comunidade",
+            "cor": "#6bd1ff"
+        },
+        {
+            "id": 2,
+            "nome": "Memes",
+            "descricao": "Memes feitos pela comunidade",
+            "cor": "#aea1ff"
+        }
+    ]
+}

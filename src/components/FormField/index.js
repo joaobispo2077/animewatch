@@ -29,6 +29,8 @@ Label.Text = styled.span`
   font-weight: 300;
   
   transition: .1s ease-in-out;
+
+
 `;
 
 const Input = styled.input`
@@ -70,6 +72,9 @@ function FormField({
   const fieldId = `id_${name}`;
   const isTextArea = type === 'textarea';
   const tag = isTextArea ? 'textarea' : 'input';
+
+  const hasValue = Boolean(value.length);
+
   return (
     <>
       <FormFieldWrapper>
@@ -77,10 +82,6 @@ function FormField({
           htmlFor={fieldId}
         >
 
-          <Label.Text>
-          {label}
-          :
-          </Label.Text>
           <Input
             as={tag}
             id={fieldId}
@@ -88,7 +89,12 @@ function FormField({
             type={type}
             value={value}
             onChange={onChange}
+            hasValue={hasValue}
           />
+          <Label.Text>
+            {label}
+            :
+          </Label.Text>
         </Label>
       </FormFieldWrapper>
     </>
