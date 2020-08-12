@@ -33,6 +33,7 @@ function CadastroCategoria() {
     fetch(URL)
       .then(async (res) => {
         const answer = await res.json();
+        console.log('testing');
         setCategorias([
           ...answer,
         ]);
