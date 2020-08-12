@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
+import useForm from '../../../hooks/useForm';
 
 function CadastroCategoria() {
   const valoresInicias = {
@@ -11,30 +12,19 @@ function CadastroCategoria() {
     cor: '',
   };
 
+  const { handleChange, values, clearForm } = useForm(valoresInicias);
+
   const [categorias, setCategorias] = useState([]);
-  const [values, setValues] = useState(valoresInicias);
-
-  function setValue(key, value) {
-    setValues({
-      ...values,
-      [key]: value,
-    });
-  }
-
-  function handleChange(event) {
-    setValue(
-      event.target.getAttribute('name'),
-      event.target.value,
-    );
-  }
 
   useEffect(() => {
     const URL = window.location.hostname.includes('localhost')
-      ? 'http://localhost:3000:8080'
+      ? 'http://localhost:8080/categorias'
       : 'https://anime-watch.herokuapp.com/categorias';
+
     fetch(URL)
       .then(async (res) => {
         const answer = await res.json();
+        // eslint-disable-next-line no-console
         console.log('testing');
         setCategorias([
           ...answer,
@@ -53,7 +43,7 @@ function CadastroCategoria() {
         event.preventDefault();
         setCategorias([...categorias, values]);
 
-        setValues(valoresInicias);
+        clearForm();
       }}
       >
 
@@ -90,8 +80,8 @@ function CadastroCategoria() {
 
       <ul>
         {categorias.map((categoria) => (
-          <li key={`${categoria.nome}`}>
-            {categoria.nome}
+          <li key={`${categoria.titulo}`}>
+            {categoria.titulo}
           </li>
         ))}
       </ul>

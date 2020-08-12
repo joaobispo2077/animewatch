@@ -2,15 +2,73 @@
     "categorias": [
         {
             "id": 1,
-            "nome": "Edits",
-            "descricao": "Edits feitos pela comunidade",
-            "cor": "#6bd1ff"
+            "titulo": "Edits",
+            "link": "https://www.alura.com.br/formacao-front-end",
+            "cor": "#f26724",
+            "link_extra": {
+              "text": "Edições feitas pela comunidade para a comunidade",
+              "url": ""
+            }
         },
         {
             "id": 2,
-            "nome": "Memes",
+            "titulo": "Memes",
             "descricao": "Memes feitos pela comunidade",
-            "cor": "#aea1ff"
+            "cor": "#aea1ff",
+            "link_extra": {
+                "text": "",
+                "url": ""
+            }
         }
+    ],
+    "videos": [
+        {
+            "id": 1,
+            "categoriaId": 1,
+            "titulo": "Mais que um espaço feito para otakus e otomes, mas, feito por eles.",
+            "url": "https://www.youtube.com/watch?v=u36kHyrvwL8&list=PLuH-jjpg-UUvinNzA9WugiuP7kVpD3rFW&index=7"          
+        },
+        {
+        "id": 2,
+        "categoriaId": 1,
+          "titulo": "Naruto",
+          "url": "https://www.youtube.com/watch?v=x1zFSLZlSxc"
+        },
+        {
+            "id": 3,
+            "categoriaId": 1,
+          "titulo": "Goku",
+          "url": "https://www.youtube.com/watch?v=DxhEL2xB2n0"
+        },
+        {
+            "id": 4,
+            "categoriaId": 1,
+          "titulo": "Boku no Hero - Todoroki Vs Deku",
+          "url": "https://www.youtube.com/watch?v=K9Eakcufh_0"
+        },
+        {
+            "id": 5,
+            "categoriaId": 1,
+          "titulo": "Bleach",
+          "url": "https://www.youtube.com/watch?v=_Tirh_Ujcg8"
+        },
+        {
+            "id": 6,
+            "categoriaId": 1,
+          "titulo": "Toph",
+          "url": "https://youtu.be/LJ3CRpq6Q9g?list=PLuH-jjpg-UUu_o7FFIA_edLWtt8IapRpq"
+        },
+        {
+            "id": 7,
+            "categoriaId": 1,
+          "titulo": "Bleach | Aizen",
+          "url": "https://youtu.be/n7ZG8e8MxTk?list=PLuH-jjpg-UUu_o7FFIA_edLWtt8IapRpq"
+        },
+        {
+        "id": 8,
+        "categoriaId": 1,
+          "titulo": "Avatar - Zukoh vs Azula",
+          "url": "https://www.youtube.com/watch?v=AZ2MmP13RTA"
+        }       
     ]
 }

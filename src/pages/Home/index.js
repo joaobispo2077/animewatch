@@ -1,12 +1,29 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Menu from '../../components/Menu';
 
-import dadosIniciais from '../../data/dados_iniciais.json';
+// import dadosIniciais from '../../data/dados_iniciais.json';
 import BannerMain from '../../components/BannerMain';
 import Carousel from '../../components/Carousel';
 import Footer from '../../components/Footer';
+import categoriasRepository from '../../repositories/categorias';
 
 function Home() {
+
+  const [dadosIniciais, setDadosIniciais] = useState({
+    categorias: [],
+  });
+
+  useEffect(() => {
+    categoriasRepository.getAllWithVideos()
+      .then((categoriesWithVideos) => {
+        // eslint-disable-next-line no-console
+        console.log(categoriesWithVideos);
+      }).catch((err) => {
+        // eslint-disable-next-line no-console
+        console.log(err.message);
+      });
+  }, []);
+
   return (
 
     <div>
@@ -16,7 +33,7 @@ function Home() {
       <div style={{ background: '#141414' }}>
         <Menu />
 
-        <BannerMain
+        {/* <BannerMain
           videoTitle={dadosIniciais.categorias[0].videos[0].titulo}
           url={dadosIniciais.categorias[0].videos[0].url}
           videoDescription="Compartilhe com a comunidade seus edits, memes, soundtracks, lo-fi versions, episódios, trailers e muito mais que você gostar sobre animes!"
@@ -51,7 +68,7 @@ function Home() {
         />
         <Carousel
           category={dadosIniciais.categorias[7]}
-        />
+        /> */}
 
         <Footer />
       </div>
