@@ -1,17 +1,22 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
 import useForm from '../../../hooks/useForm';
+import categoriesRepository from '../../../repositories/categorias';
 
 function CadastroCategoria() {
   const valoresInicias = {
-    nome: '',
+    titulo: '',
     descricao: '',
     cor: '',
+    link_extra: {
+      text: '',
+      url: '',
+    },
   };
-
+  const history = useHistory();
   const { handleChange, values, clearForm } = useForm(valoresInicias);
 
   const [categorias, setCategorias] = useState([]);
@@ -36,22 +41,35 @@ function CadastroCategoria() {
     <PageDefault>
       <h1>
         Cadastro de Categoria:
-        {values.nome}
+        {' '}
+        { values.titulo}
       </h1>
 
       <form onSubmit={function handleSubmit(event) {
         event.preventDefault();
         setCategorias([...categorias, values]);
+        categoriesRepository.create({
+          titulo: values.titulo,
+          descricao: values.descricao,
+          cor: values.color,
+          link_extra: {
+            text: values.text,
+            url: values.url,
+          },
+        }).then(() => {
+          console.log('Cadastrou com sucesso!');
+          history.push('/');
+        });
 
         clearForm();
       }}
       >
 
         <FormField
-          label="Nome da Categoria"
-          name="nome"
+          label="Título da Categoria"
+          name="titulo"
           type="text"
-          value={values.nome}
+          value={values.titulo}
           onChange={handleChange}
         />
 
@@ -71,7 +89,23 @@ function CadastroCategoria() {
           onChange={handleChange}
         />
 
-        <Button>
+        <FormField
+          label="Texto extra"
+          name="text"
+          type="text"
+          value={values.text}
+          onChange={handleChange}
+        />
+
+        <FormField
+          label="URL extra"
+          name="url"
+          type="text"
+          value={values.url}
+          onChange={handleChange}
+        />
+
+        <Button type="submit">
           Cadastrar
         </Button>
       </form>

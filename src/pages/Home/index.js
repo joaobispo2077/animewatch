@@ -24,7 +24,7 @@ function Home() {
   return (
     <PageDefault paddingAll={0}>
       {dadosIniciais.length === 0 && (<div>Loading...</div>)}
-
+    <>
       {dadosIniciais.map((category, index) => {
         if (index === 0) {
           return (
@@ -46,11 +46,11 @@ function Home() {
         return (
           <Carousel
             key={category.id}
-            category={category}
+            category={dadosIniciais[index]}
           />
         );
       })}
-
+    </>
       {/* <BannerMain
             videoTitle={dadosIniciais.categorias[0].videos[0].titulo}
             url={dadosIniciais.categorias[0].videos[0].url}
