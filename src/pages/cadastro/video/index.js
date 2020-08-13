@@ -7,6 +7,8 @@ import Button from '../../../components/Button';
 import videosRepository from '../../../repositories/videos';
 import categoriesRepository from '../../../repositories/categorias';
 
+import './index.css';
+
 function CadastroVideo() {
   const history = useHistory();
 
@@ -72,13 +74,15 @@ function CadastroVideo() {
           onChange={handleChange}
           suggestions={categoryTitles}
         />
-        <Button as="button" type="submit">
-          Cadastrar
-        </Button>
+        <div className="buttonContainer">
+          <Button as="button" type="submit">
+            Cadastrar Vídeo
+          </Button>
+          <Button as={Link} to="/cadastro/categoria">
+            Cadastrar Categoria
+          </Button>
+        </div>
       </form>
-      <Link to="/cadastro/categoria">
-        Cadastrar Categoria
-      </Link>
     </PageDefault>
   );
 }
