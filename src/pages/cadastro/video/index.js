@@ -1,29 +1,46 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
 import useForm from '../../../hooks/useForm';
 import Button from '../../../components/Button';
 import videosRepository from '../../../repositories/videos';
+import categoriesRepository from '../../../repositories/categorias';
 
 function CadastroVideo() {
   const history = useHistory();
+
+  const [categorias, setCategorias] = useState();
+
   const { handleChange, values } = useForm({
     titulo: 'Lovely',
     url: 'https://www.youtube.com/watch?v=yQ6l10-hNiI&',
     categoria: 'Edits',
 
   });
+
+  useEffect(() => {
+    categoriesRepository
+      .getAll()
+      .then((categoriasFromServer) => {
+        setCategorias(categoriasFromServer);
+      });
+  }, []);
+
+  // eslint-disable-next-line no-console
+  console.log(categorias);
   return (
     <PageDefault>
       <h1>Cadastro de Vídeo</h1>
 
       <form onSubmit={(e) => {
         e.preventDefault();
+        // eslint-disable-next-line max-len
+        const categoriaEscolhida = categorias.find((categoria) => categoria.titulo === values.categoria);
         videosRepository.create({
           titulo: values.titulo,
           url: values.url,
-          categoriaId: 1,
+          categoriaId: categoriaEscolhida.id,
         })
           .then(() => {
             console.log('Cadastrou com sucesso!');
