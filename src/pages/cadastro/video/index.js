@@ -1,20 +1,61 @@
 import React from 'react';
-import PageDefault from '../../../components/PageDefault'
-import { Link } from 'react-router-dom';
-
-
-
+import { Link, useHistory } from 'react-router-dom';
+import PageDefault from '../../../components/PageDefault';
+import FormField from '../../../components/FormField';
+import useForm from '../../../hooks/useForm';
+import Button from '../../../components/Button';
 
 function CadastroVideo() {
-    return(
-        <PageDefault>
-            <h1>Cadastro de Vídeo</h1>
+  const history = useHistory();
+  const { handleChange, values } = useForm({
+    titulo: 'Lovely',
+    url: 'https://www.youtube.com/watch?v=yQ6l10-hNiI&',
+    categoria: 'Edits',
 
-            <Link to="/cadastro/categoria">
-                Cadastrar Categoria
-            </Link>
-        </PageDefault>
-    )
+  });
+  return (
+    <PageDefault>
+      <h1>Cadastro de Vídeo</h1>
+
+      <form onSubmit={(e) => {
+        // eslint-disable-next-line no-alert
+        e.preventDefault();
+        alert('Vídeo cadastrado com sucesso!!!');
+        history.push('/');
+      }}
+      >
+        <FormField
+          label="Título do vídeo"
+          name="titulo"
+          type="text"
+          value={values.titulo}
+          onChange={handleChange}
+        />
+
+        <FormField
+          label="URL"
+          name="url"
+          type="text"
+          value={values.url}
+          onChange={handleChange}
+        />
+
+        <FormField
+          label="Categoria"
+          name="categoria"
+          type="text"
+          value={values.categoria}
+          onChange={handleChange}
+        />
+        <Button as="button" type="submit">
+          Cadastrar
+        </Button>
+      </form>
+      <Link to="/cadastro/categoria">
+        Cadastrar Categoria
+      </Link>
+    </PageDefault>
+  );
 }
 
 export default CadastroVideo;
