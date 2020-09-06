@@ -34,11 +34,11 @@ function CadastroVideo() {
   return (
     <PageDefault>
       <div className="intro">
-        <h1>Cadastro de Vídeo</h1>
         <Button  as={Link} to="/cadastro/categoria">
               Cadastrar Categoria
           </Button>
       </div>
+        <h1>Cadastro de Vídeo</h1>
       <form onSubmit={(e) => {
         e.preventDefault();
         // eslint-disable-next-line max-len

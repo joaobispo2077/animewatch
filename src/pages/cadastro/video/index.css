@@ -6,10 +6,5 @@
 
 .intro {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 0;
-}
-
-.intro button{
-    padding: 0;
+    justify-content: flex-end;
 }
