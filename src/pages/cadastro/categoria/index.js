@@ -104,10 +104,11 @@ function CadastroCategoria() {
           value={values.url}
           onChange={handleChange}
         />
-
+        <div className="buttonsContainer">
         <Button type="submit">
           Cadastrar
         </Button>
+        </div>
       </form>
 
       {categorias.length === 0 && <div>Loading...</div> }
@@ -119,7 +120,9 @@ function CadastroCategoria() {
           </li>
         ))}
       </ul>
-
+      <Button as="button" onClick={() => {clearForm()}}>
+            Limpar
+          </Button>
       <Link to="/">
         Ir para home
       </Link>
