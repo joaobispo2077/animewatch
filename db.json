@@ -38,6 +38,24 @@
         "text": "Anime Music Video"
       },
       "id": 4
+    },
+    {
+      "titulo": "OST",
+      "descricao": "Original Soundtrack",
+      "cor": "#ff00ff",
+      "link_extra": {
+        "text": "Trilha Sonora Original (Original SoundTrack)"
+      },
+      "id": 5
+    },
+    {
+      "titulo": "Lofi Version",
+      "descricao": "Versões Lofi",
+      "cor": "#ff8040",
+      "link_extra": {
+        "text": "Versões Lo-fi HipHop"
+      },
+      "id": 6
     }
   ],
   "videos": [
@@ -118,6 +136,120 @@
       "url": "https://www.youtube.com/watch?v=ryoTEjoK9Ok",
       "categoriaId": 2,
       "id": 13
+    },
+    {
+      "titulo": "Demon Slayer | Criaturas trágicas",
+      "url": "https://www.youtube.com/watch?v=IyXxMpP7z5U",
+      "categoriaId": 3,
+      "id": 14
+    },
+    {
+      "titulo": "Lullaby",
+      "url": "https://www.youtube.com/watch?v=isiye0uNly8",
+      "categoriaId": 3,
+      "id": 15
+    },
+    {
+      "titulo": "My Hero Academia - Reasons to Become a Hero",
+      "url": "https://www.youtube.com/watch?v=8soRsAb6lOk",
+      "categoriaId": 3,
+      "id": 16
+    },
+    {
+      "titulo": "Word Of Concflicts 1 - Rightous Justice",
+      "url": "https://www.youtube.com/watch?v=Pgp5V9Qoj98",
+      "categoriaId": 3,
+      "id": 17
+    },
+    {
+      "titulo": "Word Of Concflicts 2 - Love",
+      "url": "https://www.youtube.com/watch?v=fgX8Y5i5ai4",
+      "categoriaId": 3,
+      "id": 18
+    },
+    {
+      "titulo": "Word Of Concflicts 3 - Truths and Facts",
+      "url": "https://www.youtube.com/watch?v=YtNoH2rm4gY",
+      "categoriaId": 3,
+      "id": 19
+    },
+    {
+      "titulo": "Word Of Concflicts 4 - Kings",
+      "url": "https://www.youtube.com/watch?v=zJZbrN3Q7rA",
+      "categoriaId": 3,
+      "id": 20
+    },
+    {
+      "titulo": "One Piece | Natural",
+      "url": "https://www.youtube.com/watch?v=2zEc9vjpfRY",
+      "categoriaId": 4,
+      "id": 21
+    },
+    {
+      "titulo": "My Hero Academia | Mr Sandman",
+      "url": "https://youtu.be/svGnb9Gcza0?list=PLuH-jjpg-UUvinNzA9WugiuP7kVpD3rFW",
+      "categoriaId": 4,
+      "id": 22
+    },
+    {
+      "titulo": "Sparkle | Your Name AMV",
+      "url": "https://www.youtube.com/watch?v=K_7To_y9IAM",
+      "categoriaId": 4,
+      "id": 23
+    },
+    {
+      "titulo": "Thousand Foot Krutch | Courtesy Call",
+      "url": "https://www.youtube.com/watch?v=QQdsAzMQZf8",
+      "categoriaId": 4,
+      "id": 24
+    },
+    {
+      "titulo": "Studios Ghibli Complete Collection",
+      "url": "https://www.youtube.com/watch?v=YnWjlpTHUZw",
+      "categoriaId": 5,
+      "id": 25
+    },
+    {
+      "titulo": "Attack on Titan Season 2 OST - Call of Silence「Extended」",
+      "url": "https://www.youtube.com/watch?v=_GodPP6LimY",
+      "categoriaId": 5,
+      "id": 26
+    },
+    {
+      "titulo": "Sword Art Online 1 hour songs",
+      "url": "https://www.youtube.com/watch?v=z5jf1jornm8",
+      "categoriaId": 5,
+      "id": 27
+    },
+    {
+      "titulo": "Re:zero 1 hour song",
+      "url": "https://www.youtube.com/watch?v=vhQzlRI5Tig",
+      "categoriaId": 5,
+      "id": 28
+    },
+    {
+      "titulo": "𝕋𝕙𝕖 𝕃𝕒𝕤𝕥 𝔸𝕚𝕣𝕓𝕖𝕟𝕕𝕖𝕣 [ 𝔸𝕧𝕒𝕥𝕒𝕣 𝕝𝕠𝕗𝕚 / 𝕝𝕠𝕗𝕚 𝕙𝕚𝕡 𝕙𝕠𝕡 / 𝕔𝕙𝕚𝕝𝕝 𝕞𝕚𝕩]",
+      "url": "https://www.youtube.com/watch?v=XrT6unHjqr4",
+      "categoriaId": 6,
+      "id": 29
+    },
+    {
+      "titulo": "Darling in the Franxx op - Kiss of Death | lofi version | chillhop remix by immark",
+      "url": "https://www.youtube.com/watch?v=VQJJpbvMOec",
+      "categoriaId": 6,
+      "id": 30
+    },
+    {
+      "titulo": "Anime Lo-Fi",
+      "url": "https://www.youtube.com/watch?v=aJjqZX44zzE",
+      "categoriaId": 6,
+      "id": 31
+    },
+    {
+      "titulo": "Avatar: The Last Airbender☁️ ~ 1 HOUR OF LOFI CHILLOUT MUSIC | Vol.1",
+      "url": "https://www.youtube.com/watch?v=D-ya6U-pbWo",
+      "categoriaId": 6,
+      "id": 32
     }
   ]
 }

@@ -3,3 +3,13 @@
     justify-content: space-between;
     margin-bottom: 2rem;
 }
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+
+.intro button{
+    padding: 0;
+}

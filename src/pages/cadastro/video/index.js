@@ -16,7 +16,7 @@ function CadastroVideo() {
 
   const categoryTitles = categorias.map(({ titulo }) => titulo);
 
-  const { handleChange, values } = useForm({
+  const { handleChange, values, clearForm } = useForm({
     titulo: '',
     url: '',
     categoria: '',
@@ -33,8 +33,12 @@ function CadastroVideo() {
   // eslint-disable-next-line no-console
   return (
     <PageDefault>
-      <h1>Cadastro de Vídeo</h1>
-
+      <div className="intro">
+        <h1>Cadastro de Vídeo</h1>
+        <Button  as={Link} to="/cadastro/categoria">
+              Cadastrar Categoria
+          </Button>
+      </div>
       <form onSubmit={(e) => {
         e.preventDefault();
         // eslint-disable-next-line max-len
@@ -45,7 +49,7 @@ function CadastroVideo() {
           categoriaId: categoriaEscolhida.id,
         })
           .then(() => {
-            console.log('Cadastrou com sucesso!');
+            alert('Cadastrou com sucesso!');
             history.push('/');
           });
       }}
@@ -75,11 +79,13 @@ function CadastroVideo() {
           suggestions={categoryTitles}
         />
         <div className="buttonContainer">
+         <Button as="button" onClick={() => {
+           clearForm();
+         }}>
+            Limpar
+          </Button>
           <Button as="button" type="submit">
             Cadastrar Vídeo
-          </Button>
-          <Button as={Link} to="/cadastro/categoria">
-            Cadastrar Categoria
           </Button>
         </div>
       </form>
