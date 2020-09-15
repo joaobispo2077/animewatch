@@ -79,7 +79,8 @@ function CadastroVideo() {
           suggestions={categoryTitles}
         />
         <div className="buttonContainer">
-         <Button as="button" onClick={() => {
+         <Button as="button" onClick={(e) => {
+           e.preventDefault();
            clearForm();
          }}>
             Limpar

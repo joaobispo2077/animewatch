@@ -1,10 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useHistory } from 'react-router-dom';
+import { Edit, Trash } from 'react-feather';
+
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
 import useForm from '../../../hooks/useForm';
 import categoriesRepository from '../../../repositories/categorias';
+
+import './index.css';
 
 function CadastroCategoria() {
   const valoresInicias = {
@@ -39,6 +43,9 @@ function CadastroCategoria() {
 
   return (
     <PageDefault>
+      <Link to="/">
+        Ir para home
+      </Link>
       <h1>
         Cadastro de Categoria:
         {' '}
@@ -104,28 +111,42 @@ function CadastroCategoria() {
           value={values.url}
           onChange={handleChange}
         />
-        <div className="buttonsContainer">
-        <Button type="submit">
-          Cadastrar
-        </Button>
+        <div className="buttonContainer">
+          <Button as="button" onClick={(e) => {
+          e.preventDefault();
+          clearForm()}}>
+              Limpar
+          </Button>
+          <Button type="submit">
+            Cadastrar
+          </Button>
         </div>
       </form>
 
       {categorias.length === 0 && <div>Loading...</div> }
+      <center>
+        <table class="styled-table">
+          <thead>
+              <tr>
+                  <th>Categoria</th>
+                  <th>Editar</th>
+                  <th>Apagar</th>
+              </tr>
+          </thead>
+          <tbody>
+          {categorias.map((categoria) => (
+            <tr key={`${categoria.titulo}`} class="active-row">
+              <td>{categoria.titulo}</td>
+              <td><Edit color="#F26724" size={24} /></td>
+              <td><Trash color="#F26724" size={24} /></td>
+            </tr>
+          ))}          
+          </tbody>
+        </table>
+      </center>
+  
 
-      <ul>
-        {categorias.map((categoria) => (
-          <li key={`${categoria.titulo}`}>
-            {categoria.titulo}
-          </li>
-        ))}
-      </ul>
-      <Button as="button" onClick={() => {clearForm()}}>
-            Limpar
-          </Button>
-      <Link to="/">
-        Ir para home
-      </Link>
+
     </PageDefault>
   );
 }
