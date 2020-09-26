@@ -119,6 +119,10 @@ export const WatchButton = styled.button`
   transition: opacity .3s;
   display: none;
   margin: 0 auto;
+  a{
+    color: inherit; 
+    text-decoration: inherit; 
+  }
   @media (max-width: 800px) {
     display: block;
   }
